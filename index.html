@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>哚哚影视 | 少儿影视 · 亲子微电影 · 儿童广告 · 儿童内容制作</title>
+<meta name="description" content="哚哚影视专注少儿影视与亲子内容制作，提供少儿短剧、亲子微电影、儿童广告片、少儿才艺 MV 与儿童活动纪实服务。">
+<meta name="keywords" content="哚哚影视, 少儿影视, 儿童短剧, 亲子微电影, 儿童广告片, 少儿MV, 影视制作">
+<meta name="author" content="哚哚影视">
+<link rel="canonical" href="https://duoduoyingshi-wap.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="哚哚影视 | 少儿影视与亲子内容制作">
+<meta property="og:description" content="哚哚影视专注少儿影视与亲子内容制作，提供少儿短剧、亲子微电影、儿童广告片、少儿才艺 MV 等服务。">
+<meta property="og:url" content="https://duoduoyingshi-wap.github.io/">
+<meta property="og:site_name" content="哚哚影视">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EntertainmentBusiness",
+  "name": "哚哚影视",
+  "url": "https://duoduoyingshi-wap.github.io/",
+  "description": "哚哚影视专注少儿影视与亲子内容制作，提供少儿短剧、亲子微电影、儿童广告片与少儿才艺 MV 服务。",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "上海",
+    "addressRegion": "上海",
+    "addressCountry": "CN"
+  },
+  "telephone": "+86-000-0000-0000",
+  "email": "hello@duoduoyingshi-wap.github.io",
+  "openingHours": "Mon-Sun 09:00-20:00",
+  "areaServed": "CN",
+  "priceRange": "￥￥"
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#fff8fb;--ink:#2a1f2e;--soft:#ffe3ee;--pink:#ff5c9d;--pink2:#ff8fbf;
+  --vio:#7b5cd6;--cyan:#3fd0d0;--yel:#ffc53d;--line:#f3dce6;
+}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Microsoft YaHei",-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.22em;color:var(--pink);font-weight:700;text-transform:uppercase}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--pink)}
+h2.sec-t{font-size:33px;line-height:1.3;font-weight:900;letter-spacing:-.3px}
+h2.sec-t em{font-style:normal;color:var(--pink)}
+.lead{color:#7a6a76;font-size:15.5px;max-width:520px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:15px 30px;background:var(--pink);color:#fff;font-size:15px;font-weight:700;border-radius:40px;transition:.25s}
+.btn:hover{background:var(--vio);transform:translateY(-3px)}
+.btn.g{background:#fff;color:var(--pink);border:2px solid var(--pink)}
+.btn.g:hover{background:var(--pink);color:#fff}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:60;background:rgba(255,248,251,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hd{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .dot{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--vio));display:grid;place-items:center;color:#fff;font-size:20px;font-weight:900;box-shadow:0 6px 16px rgba(255,92,157,.35)}
+.logo .tx b{font-size:21px;font-weight:900;letter-spacing:.08em}
+.logo .tx small{display:block;font-size:10px;letter-spacing:.3em;color:#a48d9d;text-transform:uppercase}
+nav{display:flex;gap:4px;align-items:center}
+nav a{font-size:15px;padding:9px 15px;border-radius:20px;transition:.2s;color:#5f4e5b}
+nav a:hover{color:var(--pink);background:var(--soft)}
+nav a.cta{padding:10px 22px;background:var(--pink);color:#fff;margin-left:8px}
+nav a.cta:hover{background:var(--vio);color:#fff}
+.mob{display:none;width:44px;height:44px;border-radius:50%;background:#fff;border:1.5px solid var(--line);font-size:16px;color:var(--pink)}
+@media(max-width:920px){
+  nav{position:fixed;top:76px;left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:2px solid var(--soft);padding:8px 0 18px;max-height:0;overflow:hidden;transition:.3s}
+  nav.open{max-height:560px}
+  nav a{padding:15px 24px;width:100%;border-radius:0;text-align:center;border-bottom:1px solid var(--line)}
+  nav a.cta{margin:10px 24px;width:auto;border-radius:40px;border:none}
+  .mob{display:block}
+}
+
+/* HERO */
+.hero{padding:72px 0 88px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:var(--soft);top:-120px;right:-80px}
+.hero::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:rgba(123,92,214,.10);bottom:-90px;left:-70px}
+.hg{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.hg .pill{display:inline-flex;gap:8px;margin-bottom:22px}
+.hg .pill span{background:#fff;border:1.5px solid var(--line);padding:5px 13px;border-radius:30px;font-size:12.5px;color:#8a7080}
+.hg .pill span:nth-child(1){border-color:var(--pink);color:var(--pink);font-weight:700}
+.hero h1{font-size:56px;line-height:1.16;font-weight:900;letter-spacing:-1px}
+.hero h1 .duo{position:relative;color:var(--pink)}
+.hero h1 .duo::after{content:"✦";position:absolute;top:-14px;right:-22px;font-size:20px;color:var(--yel)}
+.hero h1 small{display:block;font-size:26px;font-weight:700;color:var(--vio);margin-top:14px;letter-spacing:0}
+.hero p.d{margin:24px 0 30px;font-size:17px;color:#6f5c6a;max-width:470px}
+.hbtns{display:flex;gap:14px;flex-wrap:wrap}
+.hfloat{position:relative;height:400px}
+.bubble{position:absolute;border-radius:24px;background:#fff;border:2px solid var(--line);box-shadow:0 14px 40px rgba(123,92,214,.10);padding:16px;display:flex;align-items:center;gap:12px;transition:.3s}
+.bubble:hover{transform:translateY(-6px) scale(1.02);border-color:var(--pink)}
+.bubble .ic{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-size:19px;flex-shrink:0}
+.bubble b{display:block;font-size:14.5px;font-weight:800}
+.bubble small{font-size:12px;color:#9a8794}
+.b1{top:0;left:0;width:250px}.b1 .ic{background:var(--soft);color:var(--pink)}
+.b2{top:22px;right:0;width:230px}.b2 .ic{background:#eae6ff;color:var(--vio)}
+.b3{top:168px;left:40px;width:260px}.b3 .ic{background:#d9f6f6;color:#12a9a9}
+.b4{top:226px;right:14px;width:220px}.b4 .ic{background:#fff4d6;color:#c98a00}
+@media(max-width:920px){
+  .hg{grid-template-columns:1fr;gap:40px}
+  .hero h1{font-size:40px}
+  .hfloat{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .bubble{position:static;width:auto!important}
+}
+@media(max-width:520px){.hfloat{grid-template-columns:1fr}}
+
+/* BRANDS */
+.strip{padding:26px 0;background:linear-gradient(90deg,var(--soft),#eae6ff)}
+.srow{display:flex;align-items:center;gap:30px;flex-wrap:wrap}
+.marks{display:flex;gap:34px;flex-wrap:wrap;align-items:center;flex:1;color:#b3a0ac;font-size:16px;font-weight:700}
+.marks span{transition:.2s;cursor:default}
+.marks span:hover{color:var(--pink)}
+
+/* SECTION */
+section{padding:100px 0}
+.sec-h{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:50px;flex-wrap:wrap}
+.sec-h .r{max-width:420px}
+@media(max-width:920px){section{padding:66px 0}}
+
+/* SERVICES */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc-a{background:#fff;border:2px solid var(--line);border-radius:28px;padding:34px 28px;transition:.3s;position:relative;overflow:hidden}
+.svc-a::after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:var(--soft);top:-60px;right:-40px;transition:.35s;z-index:0}
+.svc-a:hover{transform:translateY(-8px);border-color:var(--pink)}
+.svc-a:hover::after{transform:scale(1.6);background:rgba(123,92,214,.14)}
+.svc-a > *{position:relative;z-index:1}
+.svc-a .ic{font-size:32px;margin-bottom:18px;width:60px;height:60px;border-radius:18px;background:var(--soft);display:grid;place-items:center}
+.svc-a h3{font-size:19px;font-weight:900;margin-bottom:10px}
+.svc-a p{font-size:14px;color:#7a6a76;margin-bottom:18px}
+.svc-a ul{display:grid;gap:6px}
+.svc-a li{font-size:13px;color:#6f5c6a;padding-left:16px;position:relative}
+.svc-a li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--pink)}
+@media(max-width:920px){.svc{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.svc{grid-template-columns:1fr}}
+
+/* WORKS */
+.works{background:linear-gradient(180deg,#fff,var(--bg))}
+.wg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.wk{background:#fff;border:2px solid var(--line);border-radius:24px;overflow:hidden;transition:.3s}
+.wk:hover{transform:translateY(-7px);border-color:var(--pink);box-shadow:0 20px 40px rgba(255,92,157,.16)}
+.wk .th{aspect-ratio:4/3;position:relative;padding:22px;display:flex;flex-direction:column;justify-content:space-between}
+.wk .th .no{font-size:12px;letter-spacing:.2em;color:rgba(255,255,255,.85);font-weight:700}
+.wk .th .tag{display:inline-block;align-self:flex-start;background:rgba(255,255,255,.9);color:var(--pink);font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:20px}
+.w1{background:linear-gradient(140deg,#ff7eb6,#ff5c9d)}
+.w2{background:linear-gradient(140deg,#9b7ce8,#7b5cd6)}
+.w3{background:linear-gradient(140deg,#5fd0c9,#2fa8c0)}
+.w4{background:linear-gradient(140deg,#ffb84d,#ff8f3f)}
+.w5{background:linear-gradient(140deg,#ff8fb1,#e85d95)}
+.w6{background:linear-gradient(140deg,#7c8ce8,#5b6bd6)}
+.wk .in{padding:20px 22px}
+.wk .in h3{font-size:16.5px;font-weight:900;margin-bottom:7px}
+.wk .in p{font-size:13.5px;color:#7a6a76}
+@media(max-width:920px){.wg{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.wg{grid-template-columns:1fr}}
+
+/* NUMBERS */
+.num{background:linear-gradient(135deg,var(--pink),var(--vio));color:#fff;border-radius:40px;padding:54px 40px}
+.nr{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;text-align:center}
+.nr b{display:block;font-size:44px;font-weight:900;line-height:1}
+.nr small{font-size:13.5px;opacity:.9}
+@media(max-width:760px){.nr{grid-template-columns:1fr 1fr}.num{padding:38px 24px;border-radius:32px}}
+
+/* PROCESS */
+.pc{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.pc-i{text-align:center;padding:0 10px;position:relative}
+.pc-i:not(:last-child)::after{content:"→";position:absolute;right:-8px;top:22px;font-size:22px;color:var(--pink);z-index:2}
+.pc-i .blob{width:60px;height:60px;margin:0 auto 18px;border-radius:50% 40% 60% 40%/50% 60% 40% 50%;background:var(--soft);display:grid;place-items:center;font-size:20px;transition:.3s}
+.pc-i:hover .blob{background:var(--pink);color:#fff}
+.pc-i h4{font-size:16px;font-weight:900;margin-bottom:6px}
+.pc-i p{font-size:13px;color:#7a6a76}
+@media(max-width:920px){.pc{grid-template-columns:1fr 1fr}.pc-i:not(:last-child)::after{display:none}.pc-i{padding:16px 8px}}
+
+/* TEAM */
+.tm{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.tm-a{background:#fff;border:2px solid var(--line);border-radius:24px;overflow:hidden;transition:.3s;text-align:center}
+.tm-a:hover{border-color:var(--pink);transform:translateY(-6px)}
+.tm-a .av{aspect-ratio:1/1;position:relative;display:grid;place-items:center;font-size:48px}
+.a1{background:linear-gradient(150deg,#ffd6e7,#ffeef5)}
+.a2{background:linear-gradient(150deg,#e0d9ff,#f1eeff)}
+.a3{background:linear-gradient(150deg,#d5f2f2,#ecfafa)}
+.a4{background:linear-gradient(150deg,#ffe8c2,#fff5e0)}
+.tm-a .av .emo{transition:.3s}
+.tm-a:hover .emo{transform:scale(1.15) rotate(-6deg)}
+.tm-a h4{font-size:16.5px;font-weight:900;padding:16px 16px 4px}
+.tm-a span{display:block;font-size:12.5px;color:var(--pink);letter-spacing:.1em;font-weight:700}
+.tm-a p{font-size:13px;color:#7a6a76;padding:8px 18px 20px}
+@media(max-width:920px){.tm{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.tm{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fq{background:#fff;border:2px solid var(--line);border-radius:20px;padding:20px 22px;transition:.25s}
+.fq:hover{border-color:var(--pink)}
+.fq-q{display:flex;gap:12px;align-items:flex-start}
+.fq-q .q{width:26px;height:26px;border-radius:50%;background:var(--soft);color:var(--pink);display:grid;place-items:center;font-size:13px;font-weight:900;flex-shrink:0;margin-top:2px}
+.fq-q h4{font-size:15px;font-weight:800;line-height:1.5}
+.fq-a{margin:12px 0 0 38px;font-size:13.5px;color:#6f5c6a;padding-top:12px;border-top:1px dashed var(--line)}
+@media(max-width:760px){.faq{grid-template-columns:1fr}}
+
+/* CONTACT */
+.ct{background:linear-gradient(180deg,#eae6ff,var(--bg))}
+.cb{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
+.card{background:#fff;border:2px solid var(--line);border-radius:32px;padding:34px}
+.ci{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:center;padding:16px 0;border-bottom:1px dashed var(--line)}
+.ci:last-child{border-bottom:none}
+.ci .ic{width:48px;height:48px;border-radius:16px;background:var(--soft);display:grid;place-items:center;font-size:18px;color:var(--pink)}
+.ci dt{font-size:11.5px;letter-spacing:.18em;color:#a48d9d;text-transform:uppercase}
+.ci dd{font-size:15.5px;font-weight:700}
+.frm input,.frm select,.frm textarea{width:100%;padding:14px 16px;border:2px solid var(--line);border-radius:16px;background:#fffdfe;font-family:inherit;font-size:14.5px;color:var(--ink);margin-bottom:12px;transition:.2s}
+.frm input:focus,.frm select:focus,.frm textarea:focus{outline:none;border-color:var(--pink)}
+.frm textarea{min-height:104px;resize:vertical}
+.frm .btn{width:100%;justify-content:center}
+.frm .note{font-size:12px;color:#9a8794;text-align:center;margin-top:12px}
+@media(max-width:920px){.cb{grid-template-columns:1fr;gap:26px}}
+
+footer{border-top:2px solid var(--line);padding:48px 0 36px;font-size:13.5px;color:#8a7080;background:#fff}
+.ft{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;margin-bottom:36px}
+.ft h5{font-size:12px;letter-spacing:.22em;color:var(--ink);margin-bottom:14px;text-transform:uppercase;font-weight:800}
+.ft-l{display:grid;gap:9px}
+.ft-l a{transition:.2s}
+.ft-l a:hover{color:var(--pink)}
+.fb{display:flex;justify-content:space-between;border-top:2px solid var(--line);padding-top:24px;flex-wrap:wrap;gap:14px}
+.fb .links{display:flex;gap:22px;flex-wrap:wrap}
+.fb a:hover{color:var(--pink)}
+@media(max-width:760px){.ft{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header>
+  <div class="wrap hd">
+    <a href="#" class="logo"><div class="dot">哚</div><div class="tx"><b>哚哚影视</b><small>Kids Film &amp; TV Studio</small></div></a>
+    <nav id="nav">
+      <a href="#home">首页</a>
+      <a href="#services">服务</a>
+      <a href="#works">作品</a>
+      <a href="#process">流程</a>
+      <a href="#team">团队</a>
+      <a href="#news">动态</a>
+      <a href="#contact" class="cta">预约咨询</a>
+    </nav>
+    <button class="mob" id="mob" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap hg">
+    <div>
+      <div class="pill"><span>少儿影视</span><span>亲子内容</span><span>儿童广告</span></div>
+      <h1>把童年<br><span class="duo">哚哚</span>地<br><small>拍成会发光的影像</small></h1>
+      <p class="d">哚哚影视专注少儿影视与亲子内容制作，为儿童品牌、教育机构与家庭提供少儿短剧、亲子微电影、儿童广告片与才艺 MV 的一站式影像服务。</p>
+      <div class="hbtns">
+        <a href="#works" class="btn">看看我们的作品 →</a>
+        <a href="#contact" class="btn g">预约拍摄方案</a>
+      </div>
+    </div>
+    <div class="hfloat">
+      <div class="bubble b1"><div class="ic">🎬</div><div><b>少儿短剧</b><small>原创儿童剧集制作</small></div></div>
+      <div class="bubble b2"><div class="ic">👨‍👩‍👧</div><div><b>亲子微电影</b><small>家庭成长纪录影像</small></div></div>
+      <div class="bubble b3"><div class="ic">📺</div><div><b>儿童广告片</b><small>童装 · 玩具 · 教育品牌</small></div></div>
+      <div class="bubble b4"><div class="ic">🎤</div><div><b>少儿才艺 MV</b><small>歌唱 · 舞蹈 · 乐器录制</small></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap srow">
+    <div class="eyebrow">合作品牌</div>
+    <div class="marks">
+      <span>巴拉巴拉</span><span>巧虎</span><span>学而思</span>
+      <span>奥飞娱乐</span><span>贝因美</span><span>金宝贝</span>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-h">
+      <div>
+        <div class="eyebrow">What We Do</div>
+        <h2 class="sec-t">我们能做的 <em>少儿影视</em> 内容</h2>
+      </div>
+      <p class="r lead">懂孩子，也懂镜头。我们用孩子能理解的方式沟通，把每一次拍摄变成一场开心的体验。</p>
+    </div>
+
+    <div class="svc">
+      <article class="svc-a">
+        <div class="ic">🎬</div>
+        <h3>少儿短剧 / 儿童剧集</h3>
+        <p>原创剧本开发与儿童剧集制作，从立项、选角到拍摄后期全流程服务。</p>
+        <ul><li>原创剧本开发</li><li>小演员招募与培训</li><li>棚拍与外景执行</li><li>多集后期与配音</li></ul>
+      </article>
+      <article class="svc-a">
+        <div class="ic">👨‍👩‍👧</div>
+        <h3>亲子微电影</h3>
+        <p>为家庭定制成长主题微电影，用影像记录孩子成长的珍贵瞬间。</p>
+        <ul><li>家庭故事策划</li><li>成长纪实拍摄</li><li>生日 / 毕业纪念片</li><li>多版本成片交付</li></ul>
+      </article>
+      <article class="svc-a">
+        <div class="ic">📺</div>
+        <h3>儿童广告片</h3>
+        <p>面向童装、玩具、母婴与教育品牌的儿童向广告片与产品短片制作。</p>
+        <ul><li>品牌创意脚本</li><li>儿童模特选角</li><li>TVC 与信息流短片</li><li>全平台尺寸适配</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section class="works" id="works">
+  <div class="wrap">
+    <div class="sec-h">
+      <div>
+        <div class="eyebrow">Selected Works</div>
+        <h2 class="sec-t">部分 <em>影视作品</em> 展示</h2>
+      </div>
+      <p class="r lead">涵盖少儿短剧、亲子微电影、儿童广告片与才艺 MV 等多种内容形态。</p>
+    </div>
+
+    <div class="wg">
+      <article class="wk">
+        <div class="th w1"><div class="no">WORK 01</div><span class="tag">少儿短剧</span></div>
+        <div class="in"><h3>《哚哚小镇》第一季</h3><p>12 集原创少儿短剧 · 全案制作</p></div>
+      </article>
+      <article class="wk">
+        <div class="th w2"><div class="no">WORK 02</div><span class="tag">亲子微电影</span></div>
+        <div class="in"><h3>《第一次说爱》</h3><p>15 分钟家庭成长微电影 · 纪实风格</p></div>
+      </article>
+      <article class="wk">
+        <div class="th w3"><div class="no">WORK 03</div><span class="tag">儿童广告</span></div>
+        <div class="in"><h3>童装品牌 2026 春夏</h3><p>30 秒 TVC · 儿童模特选角与拍摄</p></div>
+      </article>
+      <article class="wk">
+        <div class="th w4"><div class="no">WORK 04</div><span class="tag">才艺 MV</span></div>
+        <div class="in"><h3>少儿合唱团主题曲</h3><p>MV 拍摄 · 录音棚配唱 · 多机位</p></div>
+      </article>
+      <article class="wk">
+        <div class="th w5"><div class="no">WORK 05</div><span class="tag">活动纪实</span></div>
+        <div class="in"><h3>少儿艺术节全程记录</h3><p>多机位纪实 · 当日快剪成片</p></div>
+      </article>
+      <article class="wk">
+        <div class="th w6"><div class="no">WORK 06</div><span class="tag">教育内容</span></div>
+        <div class="in"><h3>启蒙动画短片系列</h3><p>2D 动画 + 实拍 · 系列化内容</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="num">
+      <div class="nr">
+        <div><b>500+</b><small>完成少儿项目</small></div>
+        <div><b>8年</b><small>儿童内容经验</small></div>
+        <div><b>1200+</b><small>合作小演员</small></div>
+        <div><b>4K</b><small>全流程高清制作</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" style="background:var(--bg)">
+  <div class="wrap">
+    <div class="sec-h">
+      <div>
+        <div class="eyebrow">How We Work</div>
+        <h2 class="sec-t">五步拍好一段 <em>儿童影像</em></h2>
+      </div>
+      <p class="r lead">孩子不是道具，而是主角。流程围绕孩子的状态设计，耐心、有趣、不赶场。</p>
+    </div>
+    <div class="pc">
+      <div class="pc-i"><div class="blob">💬</div><h4>需求沟通</h4><p>了解内容定位、时长与用途</p></div>
+      <div class="pc-i"><div class="blob">✏️</div><h4>脚本创意</h4><p>原创剧本，孩子能听懂能演</p></div>
+      <div class="pc-i"><div class="blob">🌟</div><h4>选角筹备</h4><p>小演员招募、培训与场地准备</p></div>
+      <div class="pc-i"><div class="blob">🎥</div><h4>现场拍摄</h4><p>耐心引导，捕捉最真的状态</p></div>
+      <div class="pc-i"><div class="blob">🎨</div><h4>后期成片</h4><p>剪辑调色配乐，多版本交付</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" style="background:linear-gradient(180deg,var(--bg),#fff)">
+  <div class="wrap">
+    <div class="sec-h">
+      <div>
+        <div class="eyebrow">Our Team</div>
+        <h2 class="sec-t">懂孩子也懂 <em>影像</em> 的团队</h2>
+      </div>
+      <p class="r lead">核心成员来自儿童节目与广告行业，擅长与小朋友沟通，也懂镜头语言。</p>
+    </div>
+    <div class="tm">
+      <article class="tm-a">
+        <div class="av a1"><div class="emo">👩‍🎤</div></div>
+        <h4>林老师</h4><span>少儿导演</span>
+        <p>十年儿童节目导演经验，最擅长引导孩子自然表达。</p>
+      </article>
+      <article class="tm-a">
+        <div class="av a2"><div class="emo">🧑‍🏫</div></div>
+        <h4>阿May</h4><span>儿童选角指导</span>
+        <p>熟悉儿童表演训练，负责小演员招募与现场引导。</p>
+      </article>
+      <article class="tm-a">
+        <div class="av a3"><div class="emo">🎥</div></div>
+        <h4>老周</h4><span>摄影指导</span>
+        <p>电影级画面把控，擅长儿童纪实与柔光影像。</p>
+      </article>
+      <article class="tm-a">
+        <div class="av a4"><div class="emo">🎨</div></div>
+        <h4>Cici</h4><span>美术 / 造型</span>
+        <p>负责服化道与场景设计，让画面更童趣更精致。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="news" style="background:var(--soft)">
+  <div class="wrap">
+    <div class="sec-h">
+      <div>
+        <div class="eyebrow">FAQ &amp; News</div>
+        <h2 class="sec-t">常见问题与 <em>工作室动态</em></h2>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="fq">
+        <div class="fq-q"><div class="q">Q</div><h4>孩子没有表演经验可以参加拍摄吗？</h4></div>
+        <div class="fq-a">完全可以。我们的导演和选角指导会现场引导孩子，用游戏化的方式帮助他们自然进入状态。</div>
+      </div>
+      <div class="fq">
+        <div class="fq-q"><div class="q">Q</div><h4>拍摄需要多久？孩子会不会太累？</h4></div>
+        <div class="fq-a">单条短片通常 1-2 天完成，每天拍摄时长控制在 6 小时内并安排充分休息，保护孩子的状态与情绪。</div>
+      </div>
+      <div class="fq">
+        <div class="fq-q"><div class="q">Q</div><h4>小演员的肖像权如何保障？</h4></div>
+        <div class="fq-a">所有项目均签署肖像权授权协议，成片用途、发布渠道与期限清晰约定，未经授权不会二次使用。</div>
+      </div>
+      <div class="fq">
+        <div class="fq-q"><div class="q">Q</div><h4>成片什么时候能拿到？</h4></div>
+        <div class="fq-a">常规项目 7-15 个工作日交付，短视频与快剪项目可做到 48 小时内出片。</div>
+      </div>
+      <div class="fq">
+        <div class="fq-q"><div class="q">N</div><h4>2026 年春季少儿短剧招募启动</h4></div>
+        <div class="fq-a">《哚哚小镇》第二季小演员招募已开启，面向 5-12 岁儿童，报名即可获得免费试镜指导。</div>
+      </div>
+      <div class="fq">
+        <div class="fq-q"><div class="q">N</div><h4>新增亲子微电影定制档期</h4></div>
+        <div class="fq-a">亲子微电影定制服务档期已开放，春季外景拍摄需提前 3 周预约，欢迎咨询。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="ct" id="contact">
+  <div class="wrap">
+    <div class="sec-h">
+      <div>
+        <div class="eyebrow">Get In Touch</div>
+        <h2 class="sec-t">聊聊你的 <em>拍摄想法</em></h2>
+      </div>
+      <p class="r lead">告诉我们内容方向与孩子情况，我们会给出适合的拍摄方案与预算区间，不收取咨询费用。</p>
+    </div>
+
+    <div class="cb">
+      <div class="card">
+        <div class="eyebrow" style="margin-bottom:8px">联系方式</div>
+        <ul>
+          <li class="ci"><div class="ic">📞</div><div><dt>咨询电话</dt><dd>400-000-0000 / +86 000 0000 0000</dd></div></li>
+          <li class="ci"><div class="ic">✉️</div><div><dt>电子邮箱</dt><dd>hello@duoduoyingshi-wap.github.io</dd></div></li>
+          <li class="ci"><div class="ic">📍</div><div><dt>工作室地址</dt><dd>上海市长宁区少年宫路 88 号 3 层</dd></div></li>
+          <li class="ci"><div class="ic">🕘</div><div><dt>工作时间</dt><dd>周一至周日 09:00 — 20:00</dd></div></li>
+          <li class="ci"><div class="ic">🎈</div><div><dt>小演员招募</dt><dd>微信搜索「哚哚影视小演员」</dd></div></li>
+        </ul>
+      </div>
+
+      <form class="card frm" onsubmit="event.preventDefault();var b=this.querySelector('button');b.textContent='✓ 已收到，我们会尽快联系你';">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <input type="text" placeholder="家长姓名" required>
+          <input type="tel" placeholder="联系电话" required>
+        </div>
+        <input type="text" placeholder="孩子年龄 / 拍摄需求（选填）">
+        <select required>
+          <option value="">选择内容类型</option>
+          <option>少儿短剧 / 儿童剧集</option>
+          <option>亲子微电影</option>
+          <option>儿童广告片</option>
+          <option>少儿才艺 MV</option>
+          <option>活动 / 毕业纪念</option>
+          <option>其他</option>
+        </select>
+        <textarea placeholder="请描述需求：内容主题、时长、拍摄时间、预算区间等"></textarea>
+        <button type="submit" class="btn">提交需求 →</button>
+        <div class="note">我们承诺信息仅用于本次沟通，严格保密。</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="logo" style="margin-bottom:12px"><div class="dot">哚</div><div class="tx"><b>哚哚影视</b><small>Kids Film &amp; TV Studio</small></div></div>
+        <p style="max-width:290px">哚哚影视专注少儿影视与亲子内容制作，提供少儿短剧、亲子微电影、儿童广告片与少儿才艺 MV 的一站式影像服务。</p>
+      </div>
+      <div>
+        <h5>导航</h5>
+        <div class="ft-l"><a href="#home">首页</a><a href="#services">服务</a><a href="#works">作品</a><a href="#process">流程</a><a href="#team">团队</a></div>
+      </div>
+      <div>
+        <h5>内容类型</h5>
+        <div class="ft-l"><a href="#services">少儿短剧</a><a href="#services">亲子微电影</a><a href="#services">儿童广告</a><a href="#services">少儿 MV</a><a href="#services">活动纪实</a></div>
+      </div>
+      <div>
+        <h5>联系我们</h5>
+        <div class="ft-l"><a href="#contact">400-000-0000</a><a href="#contact">hello@duoduoyingshi-wap.github.io</a><a href="#contact">上海市长宁区少年宫路 88 号</a></div>
+      </div>
+    </div>
+    <div class="fb">
+      <span>© 2026 哚哚影视 · 少儿影视与亲子内容制作 · 少儿短剧 / 亲子微电影 / 儿童广告片</span>
+      <div class="links"><a href="#">隐私政策</a><a href="#">服务条款</a><a href="#">小演员招募</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('mob').addEventListener('click',function(){
+  document.getElementById('nav').classList.toggle('open');
+});
+document.querySelectorAll('nav a').forEach(function(a){
+  a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open');});
+});
+</script>
+</body>
+</html>
